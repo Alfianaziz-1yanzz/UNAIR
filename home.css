@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+.header {
+  background:blue ;
+  display: flex;
+  align-items: center;
+  padding: 20px 20px;
+  justify-content: space-between;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  list-style: none;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu a::after {
+  color: #454d00;
+}
+
+
+.logo-header {
+  width: 50px;
+}
+
+h4{
+    display: flex;
+    color: #ffffff;
+}
+
+.header nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+}
+
+
+.welcome {
+  background:blue;
+  height: 500px;
+  display: flex;              
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: white;
+}
+
+.logo-putih {
+  width: 90px;
+}
+
+.welcome h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+
+}
+
+.welcome p{
+  color: #ffffff;
+  display: block;
+  flex: column;
+  margin-top: 10px;
+}
+
+.welcome p ul{
+  color: rgb(0, 0, 0);
+}
+
+.welcome p ul li{
+  color: #000000;
+  text-decoration: none;
+}
+
+.welcome p ul li a{
+  color: #000000;
+  text-decoration: none;
+}
+
+.info li a{
+  margin-left: 20px;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  width: 100%;
+  list-style: none;
+  padding-left: 0;
+  color: rgb(255, 255, 255);
+  
+}
+
+    .footer {
+            background: linear-gradient(rgb(0, 0, 255), rgb(242, 169, 0)  ); 
+            color: #f7e412;
+            padding: 20px 20px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+        }
+
+        .footer-container {
+            max-width: 100%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr 1fr;
+            gap: 30px;
+            padding: 0;
+        }
+
+        .logo-unair{
+          width: 90px;
+          left: 40px;
+        }
+
+        .brand-section h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #ffffff;
+            left: 20px;
+        }
+
+        .brand-section p {
+            line-height: 1.6;
+            color: #E8E8E8;
+            max-width: 300px;
+            left: 20px;
+        }
+
+        .contact-section h3,
+        .social-section h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: #ffffff;
+            color: #ff649d;
+            transform: scale(1.1);
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 30px auto 0;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+            color: #E8E8E8;
+            font-size: 14px;
+        }
+
+        
+        @media (max-width: 768px) {
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                text-align: center;
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+
+            .brand-section p {
+                max-width: 100%;
+            }
+            
+            .footer {
+                position: relative;
+            }
+        }

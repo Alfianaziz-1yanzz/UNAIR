@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LokasiUNAIR.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+     <link rel="icon" type="image" href="foto/Logo-Unair.webp">
+
+     <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+.header {
+  background:blue ;
+  display: flex;
+  align-items: center;
+  padding: 20px 20px;
+  justify-content: space-between;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  list-style: none;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu a::after {
+  color: #454d00;
+}
+
+.logo-header {
+  width: 50px;
+}
+
+h4{
+    display: flex;
+    color: white;
+}
+
+.header nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  width: 100%;
+}
+
+.judul{
+    text-align: center;
+    background-color: #f2a900;
+
+}
+
+
+.title-box {
+  background: linear-gradient(to right, #f2a900, #2f6de1);
+  color: white;
+  padding: 15px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.info {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+
+.map-card {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.map-card iframe {
+  width: 100%;
+  height: 350px;
+  border: none;
+  border-radius: 6px;
+}
+
+button{
+  padding: 10px 14px;
+  background-color: #faf9e6;
+  border-radius: 2px solid black;
+  box-shadow: 3px 3px black ;
+  text-decoration: none;
+}
+
+button:hover{
+  box-shadow: 0 0;
+  transform: translate(3px, 3px);
+  transition: all 200ms ease;
+
+}
+
+.footer {
+            background: linear-gradient( #f2a900, blue  ); 
+            color: #f7e412;
+            padding: 20px 20px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+        }
+
+        .footer-container {
+            max-width: 100%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr 1fr;
+            gap: 30px;
+            padding: 0;
+        }
+
+        .logo-unair{
+          width: 90px;
+          left: 40px;
+        }
+
+        .brand-section h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #ffffff;
+            left: 20px;
+        }
+
+        .brand-section p {
+            line-height: 1.6;
+            color: #E8E8E8;
+            max-width: 300px;
+            left: 20px;
+        }
+
+        .contact-section h3,
+        .social-section h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: #ffffff;
+            color: #ff649d;
+            transform: scale(1.1);
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 30px auto 0;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+            color: #E8E8E8;
+            font-size: 14px;
+        }
+
+        
+        @media (max-width: 768px) {
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                text-align: center;
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+
+            .brand-section p {
+                max-width: 100%;
+            }
+            
+            .footer {
+                position: relative;
+            }
+        }
+    </style>
+
+
+</head>
+<body>
+    <header class="header">
+    <img src="foto/Logo-Unair.webp" class="logo-header">
+    <h4>UNIVERSITAS AIRLANGGA</h4>
+    <nav class="nav-menu">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="sejarah.html">Sejarah</a>
+      <a href="fakultas.html">Fakultas</a>
+      <a href="lokasi.html">Lokasi</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+    <div class="judul">
+        <h2>Lokasi</h2>
+        <br>
+    </div>
+
+    <section class="container">
+        <div class="title-box">
+            KAMPUS DHARMAHUSADA - A
+        </div>
+
+  
+  <div class="info">
+    <p><strong>Universitas Airlangga Kampus Dharmahusada (A)</strong></p>
+    <p>Jl. Mayjen Prof. Dr. Moestopo 47, Surabaya 60131</p>
+  </div>
+
+  
+  <div class="map-card">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7915.578551902172!2d112.758584!3d-7.264806000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f97fcbd06c5f%3A0x4871f8a6684d756b!2sUniversitas%20Airlangga%20Kampus%20Dharmahusada%20(A)!5e0!3m2!1sid!2sus!4v1768056836083!5m2!1sid!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+     <div class="title-box">
+            KAMPUS DHARMAWANGSA - B
+        </div>
+
+  
+  <div class="info">
+    <p><strong>UUniversitas Airlangga Kampus Dharmawangsa (B)</strong></p>
+    <p>Jl. Airlangga No 4-6 Surabaya 60286</p>
+  </div>
+
+  
+  <div class="map-card">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3957.7247148643237!2d112.758667!3d-7.272134000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbd38ea51a2f%3A0x2640d21feb8c9fd8!2sUniversitas%20Airlangga%20-%20Kampus%20Dharmawangsa%20(B)!5e0!3m2!1sid!2sus!4v1768056888051!5m2!1sid!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+  </div>
+
+   <div class="title-box">
+            KAMPUS MERR - C
+        </div>
+
+  
+  <div class="info">
+    <p><strong>Kantor Manajemen Universitas Airlangga </strong></p>
+    <p>Kampus C Mulyorejo, Surabaya 60115</p>
+  </div>
+
+  
+  <div class="map-card">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3957.754836156538!2d112.78424000000001!3d-7.268716!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fa21a3515291%3A0x3edf1522ff735924!2sUniversitas%20Airlangga%20-%20Kampus%20MERR%20C!5e0!3m2!1sid!2sus!4v1768057116910!5m2!1sid!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+    <div class="title-box">
+            KAMPUS GRESIK
+        </div>
+
+  
+  <div class="info">
+    <p><strong>Kampus Gresik: Jl. Dr Wahidin Sudiro Husodo No 211A, Kembangan, Kec Kebomas, Kab Gresik, Jawa Timur 61124Kampus Gresik: Jl. Dr Wahidin Sudiro Husodo No 211A, Kembangan, Kec Kebomas, Kab Gresik, Jawa Timur 61124 </strong></p>
+  </div>
+
+  
+  <div class="map-card">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d494.82949022848663!2d112.602487!3d-7.168017999999999!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMTAnMDQuOSJTIDExMsKwMzYnMDkuMCJF!5e0!3m2!1sid!2sus!4v1768057224332!5m2!1sid!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="title-box">
+           KAMPUS LAMONGAN
+        </div>
+
+  
+  <div class="info">
+    <p><strong>Kampus Lamongan: Jl. Kusuma Bangsa Timenggungan, Kec Lamongan, Kab Lamongan, Jawa Timur 62214  </strong></p>
+  </div>
+
+  
+  <div class="map-card">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d494.8845565418083!2d112.41008600000002!3d-7.117139!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMDcnMDEuNyJTIDExMsKwMjQnMzYuMyJF!5e0!3m2!1sid!2sus!4v1768057315939!5m2!1sid!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="title-box">
+           FAKULTAS ILMU KESEHATAN, KEDOKTERAN, & ILMU ALAM (FIKKIA) BANYUWANGI
+        </div>
+
+  
+  <div class="info">
+    <p><strong>Kampus I: Jl. Wijaya Kusuma No. 113, Banyuwangi </strong></p>
+  </div>
+
+  
+  <div class="map-card">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d493.6132362265384!2d114.350251!3d-8.212219000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd145458525ff89%3A0xb8974293ac93879b!2sFIKKIA%20Universitas%20Airlangga%20Kampus%20GIRI!5e0!3m2!1sid!2sus!4v1768057377926!5m2!1sid!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+
+    <div class="info">
+    <p><strong>Kampus II: Jl. Ikan Wijinongko No.18a, Banyuwangi 68418 </strong></p>
+  </div>
+
+  
+  <div class="map-card">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d42953.78193307933!2d114.38302033706971!3d-8.244454091574124!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd15ac5d3b6e07b%3A0x84f6c79553e91d3c!2sJl.%20Ikan%20Wijinongko%20No.18%2C%20Sobo%2C%20Kec.%20Banyuwangi%2C%20Kabupaten%20Banyuwangi%2C%20Jawa%20Timur%2068416%2C%20Indonesia!5e0!3m2!1sid!2sus!4v1768057504070!5m2!1sid!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+                
+    </section>
+
+     <button><a href="home.html">⟵kembali</a></button>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            
+          <div class="logo-header"> 
+                <img src="foto/Logo-Unair.webp" class="logo-unair">
+          </div>
+
+            <div class="brand-section">
+                <h2>Universitas Airlangga</h2>
+                <p>Exellence with Morality.</p>
+            </div>
+            
+            <div class="contact-section">
+                <h3>Pusat Hubungan Masyarakat dan Protokol (phmp) </h3>
+                  <p>Gedung kantor manajemen, kampus MERR C Mulyorejo - Surabaya</p> 
+                  <p>Telp. (031) 5914042, 5914043, 5915551 Fax. (031) 5915551</p>
+                  <p>WhatsApp(chat only). +62 812-3456-9007</p>
+                  <p>Email:adm@humas.unair.ac.id</p>
+            </div>
+       
+            <div class="social-section" style="z-index: 999;">
+                <h3>Ikuti Kami</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/univ_airlangga?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>  
+                    </a>
+                    <a href="https://www.tiktok.com/@unair_official?is_from_webapp=1&sender_device=pc" class="social-link">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+
+            
+        </div>
+            <div class="footer-bottom">
+                <p>copyright 2025&copy; UNIVERSITAS AIRLANGGA. All Rights Reseved.</p>
+            </div>
+
+    </footer>
+                
+        
+    
+
+</body>
+</html>

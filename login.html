@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+      <link rel="icon" type="image" href="foto/Logo-Unair.webp">
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+             
+        background:
+        linear-gradient(135deg, rgba(0, 0, 255, 0.229), rgba(242, 169, 0, 0.25) ),
+            url("UNAIR_copy_1280x853.jpg");
+        background-size: cover;
+        background-position: center;
+       
+        }
+
+        /* Animasi background */
+    @keyframes bgMove {
+        
+        100% {
+            background-position: center;
+        }
+    }
+
+    .box {
+        background: rgba(207, 216, 219, 0.995);
+        padding: 35px;
+        width: 320px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.397);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            margin-top: 10px;
+            display: block;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background: #43e97b;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button a {
+            color: #fff;
+            text-decoration: none;
+
+        }
+
+        button:hover {
+            background: #2fdc9f;
+        }
+
+        .btn-login {
+    display: block;
+    text-align: center;
+    width: 30%;
+    margin: 20px auto;
+    padding: 10px;
+    background: #001f4d;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+        p {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        a {
+            color: #001f4d;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Login</h2>
+     <marquee behavior="right">
+    ✨ Silakan masuk untuk melanjutkan ✨
+</marquee>
+    <form>
+        <label>Username</label>
+        <input type="text" required>
+
+        <label> Password </label>
+        <input type="text" required>
+
+   <a href="Afterlogin/homeafterlogin.html" class="btn-login">Login</a>
+
+    <p>Belum punya akun? <a href="Regristasi.html">Daftar</a></p>
+
+</div>
+
+</body>
+</html>

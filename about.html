@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aboutUnair.com</title>
+     <link rel="icon" type="image" href="foto/Logo-Unair.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+
+
+     <style>
+
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+.header {
+  background:blue ;
+  display: flex;
+  align-items: center;
+  padding: 20px 20px;
+  justify-content: space-between;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  list-style: none;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu a::after {
+  color: #454d00;
+}
+
+
+
+.logo-header {
+  width: 50px;
+}
+
+h4{
+    display: flex;
+    color: white;
+}
+
+.header nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  width: 100%;
+}
+
+.container {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.kartu {
+  position: relative;
+  max-width: 900px;
+  background: #faf9e6;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
+
+
+.kartu:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  background-image: url(foto/Logo-Unair.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.08; 
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  }
+
+.kartu h1,
+.kartu p {
+  position: relative;
+  z-index: 1;
+}
+
+.kartu h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.kartu p {
+  text-align: justify;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.judul h1{
+    text-align: center;
+    box-sizing: content-box;
+    background-color: blue;
+    color: white;
+    border-radius: 15px;
+}
+
+body {
+  margin:0px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: url(foto/UNAIR_copy_1280x853.jpg);
+}
+
+.ranking {
+  background:  #f2a900;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.card {
+  background-color: beige;
+  border-radius: 25px;
+  padding: 50px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  overflow: hidden;
+  text-align: center;
+  color: #0a3d91;
+}
+
+.card img {
+  width: 40px;
+  margin-bottom: 12px;
+}
+
+.card h2 {
+  font-size: 36px;
+  margin: 8px 0;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+button{
+  padding: 10px 14px;
+  background-color: #faf9e6;
+  border-radius: 2px solid black;
+  box-shadow: 3px 3px black ;
+  text-decoration: none;
+}
+
+button:hover{
+  box-shadow: 0 0;
+  transform: translate(3px, 3px);
+  transition: all 200ms ease;
+
+}
+
+
+
+.footer {
+            background: linear-gradient(#f2a900 ,  blue ); 
+            color: #f7e412;
+            padding: 20px 20px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+        }
+
+        .footer-container {
+            max-width: 100%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr 1fr;
+            gap: 30px;
+            padding: 0;
+        }
+
+        .logo-unair{
+          width: 90px;
+          left: 40px;
+        }
+
+        .brand-section h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #ffffff;
+            left: 20px;
+        }
+
+        .brand-section p {
+            line-height: 1.6;
+            color: #E8E8E8;
+            max-width: 300px;
+            left: 20px;
+        }
+
+        .contact-section h3,
+        .social-section h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+
+        .contact-info {
+            line-height: 1.8;
+        }
+
+        .contact-info p {
+            margin-bottom: 8px;
+            color: #E8E8E8;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: #ffffff;
+            color: #ff649d;
+            transform: scale(1.1);
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 30px auto 0;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+            color: #ffffff;
+            font-size: 14px;
+        }
+
+        
+        @media (max-width: 768px) {
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                text-align: center;
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+
+            .brand-section p {
+                max-width: 100%;
+            }
+            
+            .footer {
+                position: relative;
+            }
+        }
+
+
+     </style>
+</head>
+<body>
+
+    <header class="header">
+    <img src="foto/Logo-Unair.webp" class="logo-header">
+    <h4>UNIVERSITAS AIRLANGGA</h4>
+     <nav class="nav-menu">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="sejarah.html">Sejarah</a>
+      <a href="fakultas.html">Fakultas</a>
+      <a href="lokasi.html">Lokasi</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+    <section class="container">
+  <div class="kartu">
+    <h1>Tentang UNAIR</h1>
+
+    <p>UNAIR adalah singkatan dari Universitas Airlangga, sebuah perguruan tinggi negeri (PTN) ternama yang berlokasi di Surabaya, Jawa Timur, yang didirikan pada 10 November 1954. UNAIR dikenal sebagai salah satu universitas terbaik di Indonesia dengan moto "Excellence with Morality". </p>
+
+    <p>Universitas Airlangga (UNAIR) terkenal dengan bidang ilmu kesehatan (kedokteran, kedokteran gigi, farmasi, keperawatan) yang sangat kuat, menjadi salah satu universitas terbaik di Indonesia dengan akreditasi unggul, menghasilkan banyak lulusan sukses di berbagai sektor, serta memiliki riset unggulan dan kontribusi aktif dalam penanganan isu nasional seperti pandemi, UNAIR juga dikenal dengan kampusnya yang luas, fasilitas lengkap (termasuk rumah sakit sendiri), dan program beasiswa yang beragam</p>
+  </div>
+  </section>
+
+    <div class="judul">
+        <h1>Penghargaan UNAIR</h1>
+    </div>
+  
+    <section class="ranking"> 
+       
+        <div class="card">
+            <img src="foto/trophy.png" alt="">
+            <h2>#287</h2>
+            <p>QS World University Rangkings 2026</p>
+        </div>
+
+         <div class="card">
+    <img src="foto/trophy.png" alt="">
+    <h2>#51–100</h2>
+    <p>QS WUR Rankings by Subject</p>
+  </div>
+
+  <div class="card">
+    <img src="foto/trophy.png" alt="">
+    <h2>#54</h2>
+    <p>QS Asia University Rankings 2026</p>
+  </div>
+
+  <div class="card">
+    <img src="foto/trophy.png" alt="">
+    <h2>#1201–1500</h2>
+    <p>THE World University Rankings 2026</p>
+  </div>
+
+  <div class="card">
+    <img src="foto/trophy.png" alt="">
+    <h2>#9</h2>
+    <p>Impact Rankings 2025</p>
+  </div>
+
+  <div class="card">
+    <img src="foto/trophy.png" alt="">
+    <h2>#501–600</h2>
+    <p>Asia University Rankings 2025</p>
+  </div>
+
+  <div class="card">
+    <img src="foto/trophy.png" alt="">
+    <h2>#7</h2>
+    <p>UI Green Metric: Indonesia</p>
+  </div>
+
+  <div class="card">
+    <img src="foto/trophy.png" alt="">
+    <h2>#4</h2>
+    <p>Top Indonesian University QS WUR</p>
+  </div>
+
+  <div class="card">
+    <img src="foto/trophy.png" alt="">
+    <h2>#3</h2>
+    <p>Webometrics: Indonesia</p>
+  </div>
+ </section>
+
+ <button><a href="home.html">⟵kembali</a></button>
+
+    <footer class="footer">
+        <div class="footer-container">
+            
+          <div class="logo-header"> 
+                <img src="foto/Logo-Unair.webp" class="logo-unair">
+          </div>
+
+            <div class="brand-section">
+                <h2>Universitas Airlangga</h2>
+                <p>Exellence with Morality.</p>
+            </div>
+            
+            <div class="contact-section">
+                <h3>Pusat Hubungan Masyarakat dan Protokol (phmp) </h3>
+                  <p>Gedung kantor manajemen, kampus MERR C Mulyorejo - Surabaya</p> 
+                  <p>Telp. (031) 5914042, 5914043, 5915551 Fax. (031) 5915551</p>
+                  <p>WhatsApp(chat only). +62 812-3456-9007</p>
+                  <p>Email:adm@humas.unair.ac.id</p>
+            </div>
+       
+            <div class="social-section" style="z-index: 999;">
+                <h3>Ikuti Kami</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/univ_airlangga?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>  
+                    </a>
+                    <a href="https://www.tiktok.com/@unair_official?is_from_webapp=1&sender_device=pc" class="social-link">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+
+            
+        </div>
+            <div class="footer-bottom">
+                <p>copyright 2025&copy; UNIVERSITAS AIRLANGGA. All Rights Reseved.</p>
+            </div>
+
+    </footer>
+
+    
+</body>
+</html>
